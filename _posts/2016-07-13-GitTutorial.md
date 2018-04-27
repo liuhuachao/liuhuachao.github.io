@@ -67,5 +67,5 @@ git branc 查看时如出现
 
 <br>
 
-转载请注明：[潘柏信的博客](http://www.liuhuachao.com) » [点击阅读原文](http://www.liuhuachao.com/2016/07/GitTutorial/)     
+转载请注明：[刘华超的博客](http://www.liuhuachao.com) » [点击阅读原文](http://www.liuhuachao.com/2016/07/GitTutorial/)     
 
