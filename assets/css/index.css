@@ -11,12 +11,13 @@ html{background-image: url(http://mbed.qiniudn.com/yanjunyi.com/img/bg-light.jpg
 #page{display: -webkit-flex; 
 	display: flex; 
 	color: #eee; min-height: 100%;
-	/*background-color: rgba(85,85,85,0);*/
-/*	-webkit-transition: background-color ease 10s;
+	/*	
+	background-color: rgba(85,85,85,0);
+	-webkit-transition: background-color ease 10s;
 	-moz-transition: background-color ease 10s;
 	-ms-transition: background-color ease 10s;
-	transition: background-color ease 10s;*/
-
+	transition: background-color ease 10s;
+	*/
 }
 a{color: #eee; text-decoration: none;}
 a:hover{color: #fff; text-decoration: underline;}
