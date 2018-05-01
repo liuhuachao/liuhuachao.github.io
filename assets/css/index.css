@@ -8,7 +8,10 @@ ul,ol,figure,form{margin: 0; padding: 0;}
 img{border: 0; vertical-align: middle;}
 
 html{background-image: url(http://mbed.qiniudn.com/yanjunyi.com/img/bg-light.jpg);}
-#page{display: -webkit-flex; display: flex; background-color: rgba(85,85,85,0); color: #eee; min-height: 100%;
+#page{display: -webkit-flex; 
+	display: flex; 
+	color: #eee; min-height: 100%;
+	/*background-color: rgba(85,85,85,0);*/
 /*	-webkit-transition: background-color ease 10s;
 	-moz-transition: background-color ease 10s;
 	-ms-transition: background-color ease 10s;
