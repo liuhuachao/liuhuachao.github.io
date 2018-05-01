@@ -110,17 +110,17 @@ var site = {
 			setLightColor();
 			setInterval(setLightColor, 60000);
 
-			var qrContainer = elf('#link-wechat span')[0];
-			new QRCode(qrContainer, {
-				text: elf('#link-wechat a').attr('href'),
-				colorDark : "#888888",
-				colorLight : "#ffffff",
-				width: qrContainer.offsetWidth,
-				height: qrContainer.offsetHeight
-			});
-			elf('#link-wechat a').on('click', function (ev) {
-				ev.preventDefault();
-			});
+			// var qrContainer = elf('#link-wechat span')[0];
+			// new QRCode(qrContainer, {
+			// 	text: elf('#link-wechat a').attr('href'),
+			// 	colorDark : "#888888",
+			// 	colorLight : "#ffffff",
+			// 	width: qrContainer.offsetWidth,
+			// 	height: qrContainer.offsetHeight
+			// });
+			// elf('#link-wechat a').on('click', function (ev) {
+			// 	ev.preventDefault();
+			// });
 		},
 
 		list: function () {
