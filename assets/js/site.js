@@ -104,7 +104,7 @@ var site = {
 				textColorDelta = 0x80;
 				textColor = Math.round(textColorBase + textColorDelta * getDayLight());
 				// console.log(textColor);
-				elf('#card header').css('color', 'rgb(' + textColor + ',' + textColor + ',' + textColor + ')');
+				// elf('#card header').css('color', 'rgb(' + textColor + ',' + textColor + ',' + textColor + ')');
 			}
 
 			setLightColor();
