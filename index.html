@@ -1,34 +1,64 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
+<head>
+<title>刘华超</title>
+{% include head.tpl %}
+<link rel="stylesheet" type="text/css" href="/assets/css/index.css" />
+</head>
 
-<div class="main-post-list hidden">
-
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta">        
-        <time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">
-          <img src="/images/calendar.png" width="20px" /> 
-          {{ post.date | date: "%F"}}</time> 
-        <div class = "tag-img-icon">
-          <img src="/images/tag-icon.svg" width="20px" /> 
-        </div>
-        <a href="/tags">
-          <div class = "post-list-icon-mate">
-            <span class="post-list__meta--tags-right">{{ post.tags }}</span>
-          </div>
-          <div class = "post-list-small-mate">
-          <a class="btn-border-small" href={{ post.url }}>阅读全文 » </a>
-          </div>
-      </div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
-
-  {% include pagination.html %}
-
+<body class="page-type-index">
+<div id="page">
+	<div id="card">
+		<header>
+			<img src="{{site.meta.gravatar}}{{site.meta.author.gravatar}}?s=80" width="80" height="80" />
+			<h1 data-translate="name">刘华超</h1>
+			<h2 data-translate="title">Web工程师，DotNet程序员</h2>
+		</header>
+		<ul>
+			<li id="link-works">
+				<a href="works/"><i class="fa fa-briefcase">				
+					</i><span data-translate="works">简历</span>
+				</a>
+			</li>
+			<li id="link-blog">
+				<a href="/blog">
+					<i class="fa fa-rss"></i><span data-translate="blog">博客</span>
+				</a>
+			</li>
+			<li id="link-mail" class="half">
+				<a href="mailto:" class="mail">
+					<i class="fa fa-envelope"></i><span></span>
+				</a>
+			</li>
+			<li id="link-wechat" class="quarter">
+				<a href="wxp://f2f0k8-BiJCZYl1yuUC-em-1IkCZDWWg9vdj" title="WeChat">
+					<i class="fa fa-weixin"></i><span></span>
+				</a>
+			</li>
+			<li id="link-github" class="quarter">
+				<a href="https://github.com/liuhuachao" target="_blank">
+					<i class="fa fa-github"></i><span>GitHub</span>
+				</a>
+			</li>
+			<li id="link-google-plus" class="quarter">
+				<a href="https://weibo.com/happytime" target="_blank">
+					<i class="fa fa-google-plus"></i><span data-translate="google-plus">+我</span>
+				</a>
+			</li>
+			<li id="link-more" class="quarter">
+				<a href="#more">
+					<i class="fa fa-ellipsis-h"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
 </div>
+
+<script type="text/javascript" src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
+<script type="text/javascript" src="http://mbed.qiniudn.com/yanjunyi.com/js/qrcode.min.js"></script>
+<script type="text/javascript" src="/assets/js/site.js"></script>
+{% include baidu-stats.tpl %}
+</body>
+</html>
